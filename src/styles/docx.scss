@@ -254,6 +254,9 @@
     direction: rtl;
     unicode-bidi: embed;
   }
+  #txt {
+    text-align: left !important;
+  }
   @media print {
     h1 {
       page-break-before: always

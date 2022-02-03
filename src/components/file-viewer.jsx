@@ -15,6 +15,7 @@ import {
   UnsupportedViewer,
   PhotoViewerWrapper,
   AudioViewer,
+  TxtViewer,
 } from './drivers';
 
 class FileViewer extends Component {
@@ -63,6 +64,9 @@ class FileViewer extends Component {
       }
       case 'wexbim': {
         return XBimViewer;
+      }
+      case 'txt': {
+        return TxtViewer;
       }
       default: {
         return UnsupportedViewer;
